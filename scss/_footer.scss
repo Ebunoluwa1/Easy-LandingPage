@@ -1,0 +1,85 @@
+/*footer*/
+
+.footer{
+    background-color: $Dark-Blue;
+    background-attachment: fixed;
+    background-position: cover;
+      .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10%;
+     
+
+       div{
+           display: block;
+          
+            .social_media{
+                padding: 0rem 0.5rem;
+                margin-top: 2rem;
+
+                .fa-brands:hover{
+                    color: $Lime-Green;
+                    cursor: pointer;
+                }
+                .fab:hover{
+                    color: $Lime-Green;
+                    cursor: pointer;
+                }
+                .fab,
+                .fa-brands{
+                    color: $White;
+                }
+            }
+       }
+       .footer_span{
+          display: flex;
+          justify-content:space-between;
+          align-items: center;
+          font-size: small;
+          color: $Light-Grayish-Blue;
+
+           .footer_list{
+               display: flex;
+               flex-direction: column;
+               padding: 0.5rem;
+               .footer_items{
+                   padding: 0.3rem ;
+                   &:hover{
+                    color: $Lime-Green;
+                    cursor: pointer; 
+                   }
+               }
+           }
+       }
+       .footer_copy{
+           .card_body{
+               color: $Grayish-Blue;
+               font-size: small;
+               padding-top: 1rem;
+           }
+       }
+    }
+}
+
+@media(max-width: 768px) {
+    .footer{
+        .container{
+         justify-content: center;
+         text-align: center;
+            flex-direction: column;
+            .footer_span{
+                flex-direction: column;
+                // font-weight: 400;
+                font-size: large;
+                .footer_list {
+                    
+                    padding-bottom: 0.5rem;
+                }
+            }
+            .footer_copy{
+                 margin-top: 20px;
+            }
+        }
+    }
+}

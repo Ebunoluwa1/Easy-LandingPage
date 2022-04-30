@@ -1,0 +1,38 @@
+/*reason & card*/
+
+.content-reason{
+    background-color: $Light-Grayish-Blue;
+
+    .container{
+    padding: 0 10%; 
+     
+    .content{
+        padding: 3rem 0; 
+        width: 45vw;
+          p{
+              padding-top: .8rem;
+            color: $Grayish-Blue;
+            font-size: 16px;  
+          }
+    }
+       /*card*/
+        .card{
+            display: flex;
+
+            &-body{
+                padding-bottom: 4rem;
+                // width: 40vw;
+            }
+            h3{
+                font-weight: 400;
+                padding: 1rem 0;
+            }
+            //p
+           &__body{
+            color: $Grayish-Blue;
+            font-size: 13px;
+            line-height: 20px;
+           }
+        }
+    }
+}

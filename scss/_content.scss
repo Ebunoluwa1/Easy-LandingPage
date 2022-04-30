@@ -1,0 +1,38 @@
+/*content section*/
+.content-head{
+  background-color: $Very-Light-Gray;
+  
+  .container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 10%;
+
+        .content{
+            flex: 0 1 40vw;
+            height: 40vh;
+            padding: 0 1rem;
+           
+            h2,
+            p{
+            padding-bottom: .8rem;
+            }
+            &-body{
+                color: $Grayish-Blue;
+                font-size: 13px;
+            }
+            .btn{
+                
+            margin-top: .8rem;
+            }
+        }
+  }
+
+  
+    &-image{
+        flex: 0 1 60vw;
+        margin: 0;
+        height: 40vh;
+    }
+ 
+}

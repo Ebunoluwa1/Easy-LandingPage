@@ -1,0 +1,110 @@
+$Grayish-Blue: hsl(233, 8%, 62%);
+$Light-Grayish-Blue: hsl(220, 16%, 96%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+$Dark-Blue: hsl(233, 26%, 24%);
+$Lime-Green: hsl(136, 65%, 51%);
+$Bright-Cyan: hsl(192, 70%, 51%);
+
+.navbar{
+    .container{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    }
+        
+    //li
+ &__item{
+        cursor: pointer;
+        display: inline-flex;
+        padding: 0px 8px;
+    }
+    //a
+    &__link {
+       color: $Grayish-Blue; 
+       font-size: .8rem;
+       transition: all .3s;
+      
+       &:hover{
+                cursor: pointer;
+             color: #000;
+             border-bottom: 1px solid $Lime-Green;
+             padding: .5rem 1rem;
+            }
+    }
+ 
+    
+}
+
+.logo{
+    cursor: pointer;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: hsla(136, 65%, 51%, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: $White;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        cursor: pointer;
+        background-color: hsla(136, 65%, 51%, 0.8);  
+    }
+}
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #333;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+   
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+     background: white;//rgba(255, 255, 255, 0);
+     position: absolute;
+    top: 0;
+     left: 50%;
+     transform: translate(-50%);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }

@@ -13,6 +13,7 @@
 body {
   font-family: 'Public Sans', sans-serif;
   background-color: white;
+  overflow-x: hidden;
 }
 
 a,
@@ -155,7 +156,6 @@ button:hover {
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
-  position: relative;
   margin-top: 0px;
   -webkit-transform: rotate(-405deg);
           transform: rotate(-405deg);
@@ -334,7 +334,7 @@ button:hover {
             flex-direction: column;
   }
   #article .container .row .card {
-    margin: 0 auto;
+    margin: .5rem auto;
   }
   #article .container .row .card .art {
     text-align: left;
@@ -425,6 +425,10 @@ button:hover {
   padding-top: 1rem;
 }
 
+.footer .attribution {
+  padding: .5rem;
+}
+
 @media (max-width: 768px) {
   .footer .container {
     -webkit-box-pack: center;
@@ -486,6 +490,7 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    z-index: 1;
   }
   #menu-toggle ~ .menu li {
     height: 0;

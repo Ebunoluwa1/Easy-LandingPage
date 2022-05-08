@@ -6,8 +6,10 @@
                 }
                 &__item{
                     padding: 0px 4px;
+                 }
+                
             }
-            }
+            
 }
 
 @media(max-width: 620px)  {
@@ -15,10 +17,12 @@
     .cta button{
         display: none;
         }
+        
         .menu-button-container {
             display: flex;
             position: relative;
           }
+          
           .menu {
             position: absolute;
             top: 0;
@@ -28,7 +32,7 @@
             width: 100%;
             justify-content: center;
             align-items: center;
-            z-index: 10;
+            z-index: 1;
           }
           #menu-toggle ~ .menu li {
             height: 0;
